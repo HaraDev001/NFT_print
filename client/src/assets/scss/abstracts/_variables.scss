@@ -1,0 +1,28 @@
+$colors: (
+  "white": #ffffff,
+  "black": #171D27,
+  "black-2": #1F2632,
+  "black-3": #313947,
+  "black-4": #848484,
+  "green": #5EBB89,
+  "blue": #6DC2D4,
+  "pink": #E94560,
+  "transparent": transparent,
+  "gray-1": #b9b9b9,
+);
+
+// Default Font Size
+$base-font-size: 16px;
+
+$base-url: "http://localhost:3000/";
+
+// Responsive Breakpoint
+$br-xxs: 375px;
+$br-xx: 425px;
+$br-xs: 480px;
+$br-mm: 512px;
+$br-sm: 576px;
+$br-md: 768px;
+$br-lg: 992px;
+$br-xl: 1140px;
+$br-xxl: 1200px;

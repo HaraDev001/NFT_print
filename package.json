@@ -1,0 +1,43 @@
+{
+  "name": "nft_printer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chartist-plugin-tooltips-updated": "^0.1.4",
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "css-loader": "^3.4.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "moment-timezone": "^0.5.33",
+    "mongoose": "^6.0.12",
+    "nodemailer": "^6.7.0",
+    "nodemon": "^2.0.14",
+    "passport": "^0.5.0",
+    "passport-jwt": "^4.0.0",
+    "react-chartist": "^0.14.4",
+    "react-datepicker": "^4.3.0",
+    "react-day-picker": "^7.4.10",
+    "sass-loader": "^8.0.2",
+    "simplebar-react": "^2.3.6",
+    "sweetalert2-react": "^0.8.3",
+    "validator": "^13.6.0",
+    "web3": "^1.6.0",
+    "web3-eth-accounts": "^1.6.0",
+    "web3-eth-contract": "^1.6.0"
+  }
+}

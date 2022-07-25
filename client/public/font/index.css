@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'bebasKai';
+    src: url('./BebasKai.ttf');
+}
+
+.bebas-kai{
+    font-family: 'bebasKai', sans-serif;
+}

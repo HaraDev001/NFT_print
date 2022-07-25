@@ -1,0 +1,13 @@
+.input{
+    &__control{
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 8px;
+        height: 68px;
+        
+        &:focus{
+            box-shadow: none;
+            border: 1px solid #E0E0E0;
+        }
+    }
+}

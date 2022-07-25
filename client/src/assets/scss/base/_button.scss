@@ -1,0 +1,97 @@
+.btn {
+  &__create {
+    padding: 20px 64px;
+    border-radius: 50px;
+
+    @media screen and(max-width: $br-sm) {
+      padding: 16px 48px;
+    }
+  }
+
+  &__collection {
+    padding: 20px 67px;
+    border-radius: 40px;
+  }
+
+  &__logout {
+    border: 2px solid color("pink");
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: color("pink");
+      color: color("white") !important;
+      box-shadow: 0 15px 30px transparentize(color("pink"), 0.5) !important;
+    }
+  }
+
+  &__login {
+    border: 2px solid color("green");
+    background-color: color("green");
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: color("green");
+      color: color("white") !important;
+      box-shadow: 0 15px 30px transparentize(color("green"), 0.5) !important;
+    }
+  }
+
+  font-weight: 700;
+  padding: 17px 45px;
+  border-radius: 5px;
+  &:focus {
+    box-shadow: none;
+  }
+
+  @each $name, $value in $colors {
+    &__#{$name} {
+      color: set-text-color($value);
+      background-color: $value;
+      &.shadow {
+        box-shadow: none !important;
+
+        &:hover {
+          box-shadow: 0 15px 30px transparentize($value, 0.5) !important;
+        }
+      }
+    }
+
+    &__outlined--#{$name} {
+      border: 2px solid $value;
+      color: $value;
+      opacity: 0.3;
+      background-color: transparent;
+      transition: 0.5s;
+
+      &.no__opacity {
+        opacity: 1 !important;
+      }
+
+      &.shadow {
+        box-shadow: none !important;
+
+        &:hover {
+          box-shadow: 0 15px 30px transparentize($value, 0.5);
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+        background-color: $value;
+        color: white !important;
+
+        &.darkblue {
+          color: color("darkblue") !important;
+        }
+
+        &.pink {
+          color: color("pink") !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+// Background color class
+@each $name,
+$value in $colors {
+    .bg__#{$name} {
+        background-color: $value !important;
+    }
+}
+
+// opacity
+@for $i from 1 through 10 {
+    .opacity__#{$i} {
+        opacity: $i/10;
+        transition: .5s;
+        &.hover {
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@for $i from 0 through 50 {
+    .border__radius--#{$i} {
+        border-radius: 0px + $i !important;
+    }
+}
+
+// Color class
+@each $name,
+$value in $colors {
+    .color__#{$name} {
+        color: $value !important;
+    }
+}
+
+// Font Weight class
+$fw-slug: fw !default;
+@for $i from 1 to 9 {
+    .#{$fw-slug}__#{$i} {
+        font-weight: $i * 100 !important;
+    }
+}
+
+// Line height
+$class-slug: lh !default;
+@for $i from 1 to 10 {
+    .#{$class-slug}__#{$i} {
+        line-height: $i * 0.1 + 1 !important;
+    }
+}
+
+// Letter Spacing
+$spacing-slug: ls !default;
+@for $i from 1 to 10 {
+    .#{$spacing-slug}__#{$i} {
+        letter-spacing: $i * 0.1 + 0.1em !important;
+    }
+}
+
+// line clamp
+@for $i from 1 to 5 {
+    .clamp__#{$i} {
+        display: -webkit-box !important;
+        -webkit-line-clamp: $i;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+@for $i from 6 through 200 {
+    .font__size--#{$i} {
+        font-size: 0px + $i !important;
+    }
+}

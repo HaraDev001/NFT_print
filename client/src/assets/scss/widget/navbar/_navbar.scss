@@ -1,0 +1,43 @@
+.navbar__nft {
+  padding: 2.2rem 0;
+  background-color: color("black-2");
+  border-bottom: 2px solid color("black");
+  // @media screen and(max-width: $br-md) {
+  //   .container {
+  //     max-width: 100%;
+  //   }
+  // }
+}
+
+.brand {
+  display: inline-block;
+  margin-left: 23px;
+  @media screen and(max-width: $br-md) {
+    margin-left: 0px;
+  }
+}
+.wrapper {
+  &__sidebar-wrap {
+    @media screen and(max-width: $br-sm) {
+      position: fixed;
+      width: 270px;
+      right: -100%;
+      top: 0;
+      height: 100%;
+      background-color: #262b35;
+      padding: 2rem;
+      transition: 0.5s;
+    }
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  &__close {
+    width: 35px;
+    position: absolute;
+    left: -6%;
+    top: 0%;
+  }
+}
